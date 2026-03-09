@@ -7,6 +7,8 @@ public class Exercise3 {
         return new BigDecimal(base * height).setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 
+    ;
+
     static int evenOrUneven(int number) {
         if (number % 2 == 0) {
             return 0;
@@ -14,6 +16,15 @@ public class Exercise3 {
             return 1;
         }
     }
+
+    ;
+
+    static double triangleArea(double side1, double side2, double side3) {
+        double p = (side1 + side2 + side3) / 2;
+        return new BigDecimal(Math.sqrt(p * (p - side1) * (p - side2) * (p - side3))).setScale(2, RoundingMode.HALF_UP).doubleValue();
+    }
+
+    ;
 
     public static void main(String[] args) {
         System.out.println("---------- EXERCISE 2 ----------");
@@ -26,7 +37,7 @@ public class Exercise3 {
         double height = Double.parseDouble(scanner.nextLine());
         System.out.println("The perimeter of the rectangle is " + rectanglePerimeter(base, height) + " cm long");*/
 
-        System.out.println("--- EVEN OR UNEVEN METHOD TEST");
+        /*System.out.println("--- EVEN OR UNEVEN METHOD TEST");
         System.out.println("Insert a number");
         int number = Integer.parseInt(scanner.nextLine());
         int evenOrUnevenResult = evenOrUneven(number);
@@ -34,6 +45,16 @@ public class Exercise3 {
             System.out.println(number + " is even");
         } else {
             System.out.println(number + " is uneven");
-        }
+        }*/
+
+        System.out.println("--- TRIANGLE AREA METHOD TEST");
+        System.out.println("Insert the length in centimeters of the triangle first side");
+        double side1 = Double.parseDouble(scanner.nextLine());
+        System.out.println("Insert the length in centimeters of the triangle second side");
+        double side2 = Double.parseDouble(scanner.nextLine());
+        System.out.println("Insert the length in centimeters of the triangle third side");
+        double side3 = Double.parseDouble(scanner.nextLine());
+        System.out.println("The chosen triangle has an area of " + triangleArea(side1, side2, side3) + " cm²");
+
     }
 }

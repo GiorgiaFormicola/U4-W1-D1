@@ -27,17 +27,17 @@ public class Exercise3 {
     ;
 
     public static void main(String[] args) {
-        System.out.println("---------- EXERCISE 2 ----------");
+        System.out.println("---------- EXERCISE 3 ----------");
         Scanner scanner = new Scanner(System.in);
 
-       /* System.out.println("--- RECTANGLE PERIMETER METHOD TEST");
+        System.out.println("--- RECTANGLE PERIMETER METHOD TEST");
         System.out.println("Insert the length of the rectangle base in centimeters");
         double base = Double.parseDouble(scanner.nextLine());
         System.out.println("Insert the length of the rectangle height in centimeters");
         double height = Double.parseDouble(scanner.nextLine());
-        System.out.println("The perimeter of the rectangle is " + rectanglePerimeter(base, height) + " cm long");*/
+        System.out.println("The perimeter of the rectangle is " + rectanglePerimeter(base, height) + " cm long");
 
-        /*System.out.println("--- EVEN OR UNEVEN METHOD TEST");
+        System.out.println("--- EVEN OR UNEVEN METHOD TEST");
         System.out.println("Insert a number");
         int number = Integer.parseInt(scanner.nextLine());
         int evenOrUnevenResult = evenOrUneven(number);
@@ -45,7 +45,7 @@ public class Exercise3 {
             System.out.println(number + " is even");
         } else {
             System.out.println(number + " is uneven");
-        }*/
+        }
 
         System.out.println("--- TRIANGLE AREA METHOD TEST");
         System.out.println("Insert the length in centimeters of the triangle first side");
